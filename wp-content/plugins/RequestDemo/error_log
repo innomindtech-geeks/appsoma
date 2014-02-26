@@ -1,0 +1,16 @@
+[28-Jan-2014 10:17:48] WordPress database error Table 'innomiyi_apsoma.appsoma_request_mailer' doesn't exist for query INSERT INTO appsoma_request_mailer (
+`request_mailer_id` ,
+`request_mailer_name` ,
+`request_mailer_email`  
+)
+VALUES (
+NULL ,  '',
+    '')
+[28-Jan-2014 10:19:01] WordPress database error Table 'innomiyi_apsoma.appsoma_request_mailer' doesn't exist for query INSERT INTO appsoma_request_mailer (
+`request_mailer_id` ,
+`request_mailer_name` ,
+`request_mailer_email`  
+)
+VALUES (
+NULL ,  '',
+    '')

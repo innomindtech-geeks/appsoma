@@ -1,0 +1,147 @@
+/*
+    Mobile Menu Core Style
+*/
+
+.slicknav_btn { position: relative; display: inline-block; vertical-align: middle; /*float: right;*/ padding: 10px 15px; line-height: 1.125em; cursor: pointer; }
+.slicknav_menu  .slicknav_menutxt { display: block; line-height: 1.188em; float: left; }
+.slicknav_menu .slicknav_icon { float: left; margin: 0.188em 0 0 0.438em; }
+.slicknav_menu .slicknav_no-text { margin: 0 }
+.slicknav_menu .slicknav_icon-bar { display: block; width: 1.125em; height: 0.125em; -webkit-border-radius: 1px; -moz-border-radius: 1px; border-radius: 1px; -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar { margin-top: 0.188em }
+.slicknav_nav { clear: both }
+.slicknav_nav ul,
+.slicknav_nav li { display: block }
+.slicknav_nav .slicknav_arrow { font-size: 0.8em; margin: 0 0 0 0.4em; }
+.slicknav_nav .slicknav_item { display: block; cursor: pointer; }
+.slicknav_nav a { display: inline-block }
+.slicknav_nav .slicknav_item a { display: inline }
+.slicknav_menu:before,
+.slicknav_menu:after { content: " "; display: table; }
+.slicknav_menu:after { clear: both }
+/* IE6/7 support */
+.slicknav_menu { *zoom: 1 }
+
+/* 
+    User Default Style
+    Change the following styles to modify the appearance of the menu.
+*/
+
+/* Button */
+
+
+.slicknav_btn {
+	width:82px;
+	height:80px;
+	text-decoration:none;
+	-webkit-transition:all 0.2s ease-out;
+	   -moz-transition:all 0.2s ease-out;
+	        transition:all 0.2s ease-out;
+}
+.slicknav_btn{
+	float:right;
+	padding:0;
+}
+.slicknav_btn:hover,
+.slicknav_btn.slicknav_open{
+	background:#f3f3f4;
+}
+.slicknav_menu  .slicknav_menutxt{
+	display:none;	
+}
+.slicknav_menu .slicknav_icon { float: none; display:block; margin:0; padding:25px 24px;
+ }
+
+/*.slicknav_btn:hover {
+	background-color: #fe862f;
+}*/
+/* Button Text */
+
+/* Button Lines */
+.slicknav_menu .slicknav_icon-bar {
+  background:#96d8ca;
+	display:block;
+	width:auto;
+	height:3px;
+	-webkit-border-radius:0;
+	-moz-border-radius: 1px;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow:none;
+	box-shadow: none;
+}
+.slicknav_menu .slicknav_icon-bar + .slicknav_icon-bar{
+	margin-top:8px;	
+}
+.slicknav_menu {
+	padding:0;
+	text-align:left;
+}
+.slicknav_nav {
+	background:#fff;
+	color:#fff;
+	margin:0;	
+	padding:0;
+	font-size:0.875em;
+	position:absolute;
+	left:0;
+	top:80px;
+	z-index:1000;
+	width:100%;
+	padding:0px 0px 12px 0;
+	text-align:left;
+	box-shadow:inset 0 2px 6px #cee1e3;
+}
+.slicknav_nav, .slicknav_nav ul {
+	list-style: none;
+	overflow:hidden;
+}
+.slicknav_nav ul {
+	padding:0;
+	margin:0 0 12px;
+}
+.slicknav_nav ul li{
+	padding:0;
+	margin:0;
+	display:block;
+	text-align:left;
+	border-bottom:solid 2px #f6f6f6;
+}
+.slicknav_nav .slicknav_item {
+	padding:5px 10px;
+	margin:2px 5px;
+}
+.slicknav_nav li a{
+	color:#528d92;
+	font-size:20px;
+	line-height:24px;
+	border-left:solid 4px #fff;
+	display:block;
+	padding:14px 0 14px 20px;
+	margin:0;
+}
+.slicknav_nav .slicknav_item a {
+	padding:0;
+	margin:0;
+}
+.slicknav_nav .slicknav_item:hover {
+		
+}
+.slicknav_nav li a:hover{
+	color:#4fc5ce;
+}
+.slicknav_nav li a.actv{
+	color:#2ec1d9;
+	border-left:solid 4px #2ec1d9;	
+}
+.slicknav_nav a.login{
+	margin-left:24px;
+}
+.slicknav_nav .slicknav_txtnode {
+     margin-left:15px;   
+}
+
+@media only screen and (max-width: 480px) {
+	.slicknav_menu {
+		text-align:center;
+	}
+}
