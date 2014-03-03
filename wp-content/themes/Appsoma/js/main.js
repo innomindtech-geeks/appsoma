@@ -1,6 +1,6 @@
 			
 $(document).ready(function(e) {
-	var pathname = window.location.origin;	
+	var pathname = window.location.protocol + "//" + window.location.hostname;	
 	
 	 $("#request_form").validationEngine('attach',{
             onValidationComplete:function(form,status){
@@ -10,7 +10,7 @@ $(document).ready(function(e) {
 		          
                     $.ajax({
                         type:'POST',
-                        url:pathname+"/clients/Appsoma/wp-content/plugins/RequestDemo/request_save.php",
+                        url:pathname+"/wp-content/plugins/RequestDemo/request_save.php",
                         data:jQuery("#request_form").serialize(),
                         success:function(html){
 							
@@ -44,7 +44,7 @@ $(document).ready(function(e) {
 		          
                     $.ajax({
                         type:'POST',
-                        url:"http://awesomebusinesssolutions.com/clients/Appsoma/wp-content/themes/Appsoma/register_save.php",
+                        url: pathname+ "/wp-content/themes/Appsoma/register_save.php",
                         data:jQuery("#sign_up").serialize(),
                         success:function(response){	
 						                   
@@ -72,14 +72,14 @@ $(document).ready(function(e) {
 										
 		                 $.ajax({
                         type:'POST',
-                        url:"http://awesomebusinesssolutions.com/clients/Appsoma/wp-content/themes/Appsoma/login_save.php",
+                        url: pathname + "/wp-content/themes/Appsoma/login_save.php",
                         data:jQuery("#loginform").serialize(),
                         success:function(html){									
                            
                            	                  
                             if(html == 'success'){ 
 							$("#login").slideUp("slow");                          
-						    window.location.assign("http://awesomebusinesssolutions.com/clients/Appsoma")                          
+						    window.location.assign( pathname )                          
 							  }
 							  else{
 								   alert("Login failed");
