@@ -15,7 +15,7 @@
         <?php }
 		else { ?>
                   
-			 <a href="https://appsoma.com/login"  class="login" data-toggle="modal" data-target="#login">Login</a>
+			 <a href="https://appsoma.com/login"  class="login" <?php //data-toggle="modal" data-target="#login"?>>Login</a>
              
               <?php 
 		}
