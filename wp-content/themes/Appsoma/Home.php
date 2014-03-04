@@ -17,7 +17,7 @@ get_header();
                     <h1><?php the_content(); ?></h1>
                   
                 <div class="ctaWrap">
-                	<a href="<?php echo esc_url(get_permalink(get_page_by_title("Demo"))); ?>" class="cta yellow">Use Appsoma</a><br>
+                	<a href="https://appsoma.com/code" class="cta yellow">Use Appsoma</a><br>
                 	Without registration. For free.
                 </div>
                 </div>
